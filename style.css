@@ -1,0 +1,90 @@
+body{
+  background-color: rgb(116, 116, 116);
+  
+  background-repeat: no-repeat;
+}
+
+html.body{
+  font-size: 16px;
+  /*@font-face:{
+  font-family: 'myFirstFamily';
+  src: url(address);
+  }  */
+}
+/*
+img{
+  background-position: left;
+  height: 300px;
+  width: 600px;
+}
+p.p1{
+
+  position: overflow;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+
+
+  font-size: large;
+  line-height: 1.4;
+  text-align: center;
+  font-stretch: normal;
+  font-weight: 700;
+  font-style: initial;
+}
+p.p1.span{
+  font-style: italic;
+  font-size: x-small;
+}
+<img src="D:/GitHub/_8/T5DEEE.jpg">
+   <p class="p1"><span>Happy Bithday </span>
+   my dear sister
+   </p>
+  
+}
+*/
+
+
+
+.img { /* общий блок */
+  position: relative;
+  display: table;
+  margin: 0 auto;
+  border: 10px solid #456;
+  line-height: 0;
+  color: rgb(223,223,223);
+  cursor: pointer;
+}
+
+.img:after {                  /* "подробнее" */
+  content: "click \bb";
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  padding: 5px 10px;
+  background: rgba(49, 51, 53, 0.6);
+  line-height: 1.6em;
+}
+.img:hover:after {
+  content: none;
+}
+
+.img figcaption {
+  display: none;
+}
+.img:hover figcaption {           /* прозрачная область */
+  display: block;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  background: rgba(68,85,102,.7);
+  font-size: 80%;
+  line-height: 1.3em;
+}
+
+.img:hover figcaption strong {         /* заголовок */
+  display: block;
+  line-height: 2em;
+  font-size: 110%;
+}
